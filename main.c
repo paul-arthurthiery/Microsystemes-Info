@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    printf("Hello, World!\n");
-    printf("Hello, World!\n");
-
-    return 0;
+int
+main(int argc, char **argv) {
+  char a_word[80];
+  puts("Hello, World!");
+  puts("Now say something : ");
+  scanf ("%s", a_word);
+  printf ("You entered: %s\n", a_word);
+  return 0;
 }
