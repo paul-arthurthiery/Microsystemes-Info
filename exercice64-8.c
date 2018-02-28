@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+//floats are only precise to 7 digits, so the result isn't exactly equal to 1.0
 int main(int argc, char **argv) {
   float f = 0.0;
   int i;
