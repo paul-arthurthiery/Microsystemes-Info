@@ -3,19 +3,16 @@
 
 
 int CompareChaines(char ch1[],char ch2[]) {
-  for (int i = 0; i < strlen(ch1); i++) {
-    if(ch1[i]>ch2[i]){
-      return 1;
-    } else if(ch1[i]<ch2[i]){
-      return -1;
-    }
+  int i=0;
+  while(ch1[i] == ch2[i] && ch1[i]!='\0'){
+    i++;
   }
-  return 0;
+  return ch1[i]-ch2[i];
 }
 
 int main(int argc, char const *argv[]) {
 
-  printf("%d\n", CompareChaines("salut", "yo"));
+  printf("%d\n", CompareChaines("yo", "yo"));
 
 
 }
