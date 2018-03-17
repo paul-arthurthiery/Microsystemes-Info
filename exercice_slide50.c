@@ -49,9 +49,9 @@ main() {
 
   printf("\n");
 
-  printf("Here are your ints' 3rd least significant bit : \n");
-  printf("%d -> %d %d %d %d \n", firstInput, (firstInput>>12)&15, (firstInput>>8)&15, (firstInput>>4)&15, firstInput&15);
-  printf("%d -> %d %d %d %d \n", secondInput, (secondInput>>12)&15, (secondInput>>8)&15, (secondInput>>4)&15, secondInput&15);
+  printf("Here are your ints' decomposed in 4 bytes : \n");
+  printf("%d -> %d %d %d %d \n", firstInput, (firstInput>>24)&255, (firstInput>>16)&255, (firstInput>>8)&255, firstInput&255);
+  printf("%d -> %d %d %d %d \n", secondInput, (secondInput>>24)&255, (secondInput>>16)&255, (secondInput>>8)&255, secondInput&255);
 
 
 }

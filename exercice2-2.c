@@ -21,6 +21,6 @@ int ContientDoublons(int tab[],int n){
 
 
 int main(int argc, char const *argv[]) {
-  int T[] = {0, 5, 1};
+  int T[] = {5, 5, 3};
   printf("%d\n", ContientDoublons(T, 3));
 }
